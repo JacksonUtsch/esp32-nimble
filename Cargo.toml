@@ -28,7 +28,7 @@ debug = []
 
 [dependencies]
 log = { version = "0.4", default-features = false }
-esp-idf-svc = { git = "https://github.com/esp-rs/esp-idf-svc.git", rev = "dd04bd9f9b0b4e96519ab68c781e2e6420c495c2", default-features = false, features = ["alloc", "embassy-sync"] }
+esp-idf-svc = { git = "https://github.com/esp-rs/esp-idf-svc.git", branch = "master", default-features = false, features = ["alloc", "embassy-sync"] }
 
 bitflags = { version = "2.4.1" }
 bstr = { version = "1.8.0", default-features = false }
@@ -44,7 +44,7 @@ cfg-if = "1.0"
 
 [dev-dependencies]
 anyhow = "1"
-esp-idf-svc = { git = "https://github.com/esp-rs/esp-idf-svc.git", rev = "dd04bd9f9b0b4e96519ab68c781e2e6420c495c2", features = ["embassy-time-driver", "critical-section"]}
+esp-idf-svc = { git = "https://github.com/esp-rs/esp-idf-svc.git", branch = "master", features = ["embassy-time-driver", "critical-section"]}
 embassy-time = { version = "0.4.0", features = ["generic-queue-8"] }
 
 [build-dependencies]
